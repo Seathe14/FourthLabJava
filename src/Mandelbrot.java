@@ -48,7 +48,7 @@ public class Mandelbrot extends FractalGenerator
     @Override
     public int numIterations(double x, double y) {
         Complex z0 = new Complex(x,y);
-        Complex z = z0;
+        Complex z = new Complex(0,0);
         for (int i = 0;i < MAX_ITERATIONS;i++)
         {
             if(z.abs() > 4.0) return i;
